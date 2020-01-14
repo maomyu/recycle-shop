@@ -32,6 +32,8 @@ func Init() {
 	}
 	inited = true
 }
+
+// 初始化一个redis连接池
 func initRedisPool() {
 	p, _ = New(createConnection, config.GetRedisConfig().GetDBNum())
 }
