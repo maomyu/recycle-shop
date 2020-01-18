@@ -1,0 +1,25 @@
+2020-01-18 20:46:47.618	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 20:54:48.345	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 20:57:57.657	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 20:58:08.135	INFO	ws/ws.go:55	用户：[123456789] 开始等待读取客户端消息
+2020-01-18 21:13:54.426	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 21:13:58.839	INFO	ws/ws.go:54	用户：[123456789] 开始等待读取客户端消息
+2020-01-18 21:16:26.258	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 21:16:51.473	INFO	ws/ws.go:54	用户：[123456789] 开始等待读取客户端消息
+2020-01-18 21:20:09.281	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 21:23:38.032	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 21:24:57.917	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 21:25:45.436	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 21:30:26.785	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 21:31:22.415	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 21:34:59.368	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 21:35:45.308	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 21:37:05.445	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 21:38:41.391	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 21:38:55.496	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 21:40:04.066	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 21:40:09.060	INFO	ws/ws.go:54	用户：[123456789] 开始等待读取客户端消息
+2020-01-18 21:55:47.024	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 21:55:58.628	INFO	ws/ws.go:55	用户：[123456789] 开始等待读取客户端消息
+2020-01-18 21:57:52.281	INFO	redispool/redis.go:29	{true 112.124.31.82:6378 redis199898199817 8 3000 {false   []}}
+2020-01-18 21:57:52.840	INFO	ws/ws.go:55	用户：[123456789] 开始等待读取客户端消息
