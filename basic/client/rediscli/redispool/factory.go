@@ -1,6 +1,7 @@
 package redispool
 
 import (
+	"fmt"
 	"io"
 
 	"github.com/garyburd/redigo/redis"
@@ -10,10 +11,10 @@ import (
 func NewSession() (*redisConnection, error, *Pool, io.Closer) {
 	conn, err := p.Acquire()
 	if err != nil {
-		return nil, err, p, conn.(*redisConnection)
+		return nil, fmt.Errorf("[basic]：获取一个连接失败,[%w]", err), p, conn.(*redisConnection)
 	}
 	fa := conn.(*redisConnection)
-	return fa, err, p, conn.(*redisConnection)
+	return fa, nil, p, conn.(*redisConnection)
 }
 func (s *redisConnection) Relase(p *Pool, c io.Closer) {
 	p.Release(c)
@@ -21,6 +22,7 @@ func (s *redisConnection) Relase(p *Pool, c io.Closer) {
 func (f *redisConnection) GetID() int32 {
 	return f.id
 }
-func (f *redisConnection) GetConn() *redis.Conn {
+
+func (f *redisConnection) GetConn() redis.Conn {
 	return f.conn
 }
