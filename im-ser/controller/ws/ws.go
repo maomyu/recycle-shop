@@ -50,13 +50,13 @@ func ServerWs(c *gin.Context) {
 		w.Write(body)
 	}
 	// 将该用户修改成在线用户
-	userservice := service.UserWs{
-		ID:     userID,
-		Status: 1,
+	userservice := &service.UserWs{
+		ID: userID,
 	}
 
 	if ok, err := userservice.UpdateOnlineUser(ws); ok && err == nil {
 		logger.Sugar.Infof("用户：[%s] 开始等待读取客户端消息", userID)
+		fmt.Println(userservice)
 		userservice.Reader(ws)
 	} else {
 		logger.Sugar.Error(err)

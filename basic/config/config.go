@@ -21,6 +21,7 @@ var (
 	defaultConfigFilePrefix = "application-"
 	redisConfig             defaultRedisConfig
 	profiles                defaultProfiles
+	rabbitMQConfig          defaultRabbitMQConfig
 	m                       sync.RWMutex
 	inited                  bool
 	sp                      = string(filepath.Separator)
@@ -69,11 +70,15 @@ func Init() {
 	}
 	// 完成配置文件的赋值操作
 	config.Get(defaultRootPath, "redis").Scan(&redisConfig)
+	config.Get(defaultRootPath, "rabbitmq").Scan(&rabbitMQConfig)
 	inited = true
 }
-
 
 // GetRedisConfig 获取Redis配置
 func GetRedisConfig() (ret RedisConfig) {
 	return redisConfig
+}
+func GetrabbitMQConfig() (ret RabbitMQConfig) {
+
+	return rabbitMQConfig
 }
