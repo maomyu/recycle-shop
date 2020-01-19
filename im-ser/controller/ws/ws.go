@@ -2,6 +2,7 @@ package ws
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -9,6 +10,7 @@ import (
 	"github.com/yuwe1/recycle-shop/basic/common"
 	"github.com/yuwe1/recycle-shop/basic/logger"
 	"github.com/yuwe1/recycle-shop/im-ser/service"
+	"github.com/yuwe1/recycle-shop/im-ser/service/model"
 )
 
 // 返回信息
@@ -28,9 +30,11 @@ var upgrader = websocket.Upgrader{
 }
 
 // websocker服务端接口函数上线的入口
-func ServerWs(w http.ResponseWriter, r *http.Request) {
+func ServerWs(c *gin.Context) {
 	// 获得用户的唯一id
-	userID := r.FormValue("id")
+	userID := c.Query("id")
+	r := c.Request
+	w := c.Writer
 	ws, err := upgrader.Upgrade(w, r, nil)
 	if err != nil {
 		logger.Sugar.Error("服务升级失败: [%w]", err)
@@ -46,7 +50,7 @@ func ServerWs(w http.ResponseWriter, r *http.Request) {
 		w.Write(body)
 	}
 	// 将该用户修改成在线用户
-	userservice := service.UserService{
+	userservice := service.UserWs{
 		ID:     userID,
 		Status: 1,
 	}
@@ -61,5 +65,43 @@ func ServerWs(w http.ResponseWriter, r *http.Request) {
 
 // 用户发送消息
 func SendMessage(c *gin.Context) {
+	msg := new(model.Message)
+	err := c.BindJSON(msg)
+	if err != nil {
+		fmt.Errorf("[im-ser:controller:ws:sendmessage]:[接收数据出错]:[%w]", err)
+	} else {
+		if len(msg.ID) > 0 && len(msg.SendID) > 0 && len(msg.ReceiveID) > 0 && len(msg.Content) > 0 && msg.Type > -1 {
+			// 定义一个ws客户端
+			userws := service.UserWs{
+				ID: msg.SendID,
+			}
+			if userws.SendMessage(*msg) {
+				result := common.Result{
+					Success:   0,
+					Errorcode: 0,
+				}
+				c.IndentedJSON(200, result)
+			} else {
+				//
+				result := common.Result{
+					Success:   0,
+					Errorcode: 2,
+					Message: &Result{
+						Tip: "内部错误",
+					},
+				}
+				c.IndentedJSON(500, result)
+			}
+		} else {
+			result := common.Result{
+				Success:   0,
+				Errorcode: 1,
+				Message: &Result{
+					Tip: "无法发送空消息",
+				},
+			}
+			c.IndentedJSON(200, result)
+		}
 
+	}
 }

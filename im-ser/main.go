@@ -9,12 +9,14 @@ import (
 )
 
 func route() {
-	http.HandleFunc("/ws", ws.ServerWs)
-	r := gin.New()
-	r.POST("/send", ws.SendMessage)
+	// http.HandleFunc("/ws", ws.ServerWs)
+
 }
 func main() {
 	basic.Init()
 	route()
-	http.ListenAndServe("0.0.0.0:8080", nil)
+	r := gin.Default()
+	r.GET("/ws", ws.ServerWs)
+	r.POST("/send", ws.SendMessage)
+	http.ListenAndServe("0.0.0.0:8080", r)
 }
