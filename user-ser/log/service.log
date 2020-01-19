@@ -1,0 +1,14 @@
+2020-01-19 21:48:33.803	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-19 21:52:31.899	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-19 21:54:23.490	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-19 21:56:38.467	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-19 21:57:49.588	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-19 22:59:20.316	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-19 23:03:04.202	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-19 23:08:41.694	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-19 23:11:44.038	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-19 23:13:03.086	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-19 23:13:57.474	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-19 23:15:14.088	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-19 23:17:39.000	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-19 23:20:04.463	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
