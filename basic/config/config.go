@@ -22,6 +22,7 @@ var (
 	redisConfig             defaultRedisConfig
 	profiles                defaultProfiles
 	rabbitMQConfig          defaultRabbitMQConfig
+	mysqlConfig             defaultMysqlConfig
 	m                       sync.RWMutex
 	inited                  bool
 	sp                      = string(filepath.Separator)
@@ -71,6 +72,7 @@ func Init() {
 	// 完成配置文件的赋值操作
 	config.Get(defaultRootPath, "redis").Scan(&redisConfig)
 	config.Get(defaultRootPath, "rabbitmq").Scan(&rabbitMQConfig)
+	config.Get(defaultRootPath, "mysql").Scan(&mysqlConfig)
 	inited = true
 }
 
@@ -81,4 +83,9 @@ func GetRedisConfig() (ret RedisConfig) {
 func GetrabbitMQConfig() (ret RabbitMQConfig) {
 
 	return rabbitMQConfig
+}
+
+//获取我们的配置
+func GetMysqlConfig() (ret MysqlConfig) {
+	return mysqlConfig
 }
