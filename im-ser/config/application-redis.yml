@@ -3,7 +3,7 @@ app:
     enabled: true
     conn: 112.124.31.82:6378
     dbNum: 8
-    password: redis199898199817
+    password: ************
     timeout: 3000
     sentinel:
       enabled: false

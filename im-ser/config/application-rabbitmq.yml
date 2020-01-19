@@ -1,0 +1,6 @@
+app:
+  rabbitmq:
+    url: 112.124.31.82:15672
+    user: admin
+    password: ***********
+    
