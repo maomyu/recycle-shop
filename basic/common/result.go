@@ -5,3 +5,7 @@ type Result struct {
 	Errorcode int         `json:"errorcode"`
 	Message   interface{} `message`
 }
+
+type Data struct{
+	 Tip string `json:"tip"`
+}

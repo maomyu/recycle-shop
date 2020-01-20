@@ -9,6 +9,7 @@ require (
 	github.com/go-sql-driver/mysql v1.5.0
 	github.com/gorilla/websocket v1.4.1
 	github.com/micro/go-micro v1.18.0
+	github.com/satori/go.uuid v1.2.0
 	github.com/streadway/amqp v0.0.0-20200108173154-1c71cc93ed71
 	go.uber.org/zap v1.12.0
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0

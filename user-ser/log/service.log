@@ -12,3 +12,47 @@
 2020-01-19 23:15:14.088	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
 2020-01-19 23:17:39.000	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
 2020-01-19 23:20:04.463	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 09:21:45.759	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 10:12:04.304	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 10:19:48.595	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 10:19:53.541	ERROR	dao/register.go:48	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1406 Data too long for column 'id' at row 1})]
+2020-01-20 10:22:03.762	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 10:22:07.868	ERROR	dao/register.go:50	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1406 Data too long for column 'id' at row 1})]
+2020-01-20 10:30:47.572	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 10:38:22.163	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 10:40:32.318	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 10:58:44.593	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 11:33:50.463	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 11:37:44.277	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 11:38:45.642	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 11:41:15.067	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 11:47:49.185	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 11:54:09.940	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 11:57:51.108	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 11:59:50.419	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 12:02:49.846	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 12:05:44.084	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 12:07:52.476	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 12:15:57.177	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 12:23:07.283	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 12:24:16.529	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 12:32:42.575	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 12:34:32.141	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 12:36:07.661	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 12:39:30.381	ERROR	dao/register.go:77	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1062 Duplicate entry 'aaaaaa' for key 'password'})]
+2020-01-20 13:12:54.625	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 13:13:08.417	ERROR	dao/register.go:62	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1146 Table 'users.user' doesn't exist})]
+2020-01-20 13:14:50.258	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 13:15:35.211	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 13:23:54.842	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 13:23:59.624	ERROR	dao/register.go:59	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1054 Unknown column 'password' in 'field list'})]
+2020-01-20 13:24:16.374	ERROR	dao/register.go:59	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1054 Unknown column 'password' in 'field list'})]
+2020-01-20 13:24:30.555	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 14:53:48.499	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 15:16:20.226	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 15:33:41.356	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 16:32:36.967	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 16:37:35.635	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 16:42:39.123	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 16:43:47.334	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 16:49:32.564	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}

@@ -1,11 +1,22 @@
 @host = http://localhost:8081/user
 @apj = application/json
 
-POST {{host}}/register
+###
+POST {{host}}/account
 Content-Type: {{apj}}
 
 {
-    "name":"鱼尾",
+    "nickname":"鱼尾",
     "email":"yuweijiubayiqi@163.com",
+    "password":"aaaaaa"
+}
+
+###
+POST {{host}}/account
+Content-Type: {{apj}}
+
+{
+    "nickname":"",
+    "email":"wuyaziyuwei@163.com",
     "password":"aaaaaa"
 }

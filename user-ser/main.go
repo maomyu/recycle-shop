@@ -5,17 +5,17 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/yuwe1/recycle-shop/basic"
+	"github.com/yuwe1/recycle-shop/basic/mq"
 	"github.com/yuwe1/recycle-shop/user-ser/controller"
+	"github.com/yuwe1/recycle-shop/user-ser/mqdao"
 )
 
 func main() {
 	basic.Init()
-	// client := mq.GetRabbitMQ()
-	// fmt.Println(client)
-	// go client.ConsumeFromQueue("savehistory:234567890", "savehistory", dao.SaveHistoryMessage)
-	// dbpool.GetSession()
+	client := mq.GetRabbitMQ()
+	go client.ConsumeFromQueue("creditscore:", "updatecreditscore", mqdao.UpdateCreditscore)
 	r := gin.Default()
-	r.POST("/user/register", controller.Register)
-	r.GET("/user/login", controller.Login)
+	r.POST("/user/account", controller.Register)
+	r.GET("/user/account/{id}", controller.Login)
 	http.ListenAndServe("0.0.0.0:8081", r)
 }
