@@ -8,10 +8,7 @@ import (
 	"github.com/yuwe1/recycle-shop/user-ser/model"
 )
 
-type UserService struct {
-}
-
-func (u UserService) GetUserInfo(email string) (model.User, error) {
+func (u Service) GetUserInfo(email string) (model.User, error) {
 
 	userdao := dao.UserDao{}
 	user := userdao.QueryUserByEmail(email)
@@ -19,7 +16,7 @@ func (u UserService) GetUserInfo(email string) (model.User, error) {
 }
 
 // 注册
-func (u UserService) Register(user model.User) (model.RegisterResult, bool) {
+func (u RegisterService) Register(user model.User) (model.RegisterResult, bool) {
 	userdao := dao.UserDao{}
 	if ok, _ := userdao.InsertUser(user); !ok {
 		return model.RegisterResult{}, false
@@ -51,7 +48,7 @@ func (u UserService) Register(user model.User) (model.RegisterResult, bool) {
 		HeaderImage: user.HeaderImage,
 		School:      user.School,
 		Signature:   user.Signature,
-		Birthday:    user.Birthday,
+		Birthday:    user.Birthday.Format("2006-01-02"),
 		StudentID:   user.StudentID,
 		Isrealname:  isrealname,
 		Follow:      len(ids),

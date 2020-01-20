@@ -11,7 +11,7 @@ import (
 	"github.com/yuwe1/recycle-shop/user-ser/service"
 )
 
-type loginRequest struct {
+type registerRequest struct {
 	Nickname string `json:"nickname"`
 	Password string `json:"password"`
 	Email    string `json:"email"`
@@ -20,7 +20,7 @@ type loginRequest struct {
 // 注册
 func Register(c *gin.Context) {
 
-	parm := new(loginRequest)
+	parm := new(registerRequest)
 	err := c.BindJSON(parm)
 	defer func() {
 		if err != nil {
@@ -32,7 +32,7 @@ func Register(c *gin.Context) {
 	}
 
 	//判读该账户是否可以注册
-	usersrv := &service.UserService{}
+	s := &service.RegisterService{}
 	if len(parm.Email) <= 0 || len(parm.Nickname) <= 0 || len(parm.Password) <= 0 {
 		result := common.Result{
 			Success:   0,
@@ -44,6 +44,7 @@ func Register(c *gin.Context) {
 		c.JSON(200, result)
 		return
 	}
+	usersrv := &service.Service{}
 	if user, _ := usersrv.GetUserInfo(parm.Email); len(user.ID) > 0 {
 		result := common.Result{
 			Success:   0,
@@ -60,7 +61,7 @@ func Register(c *gin.Context) {
 			Email:    parm.Email,
 			Birthday: time.Now(),
 		}
-		if r, ok := usersrv.Register(user); ok {
+		if r, ok := s.Register(user); ok {
 			result := common.Result{
 				Success:   0,
 				Errorcode: 0,

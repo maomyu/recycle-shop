@@ -1,7 +1,7 @@
 @host = http://localhost:8081/user
 @apj = application/json
 
-###
+### 注册
 POST {{host}}/account
 Content-Type: {{apj}}
 
@@ -11,12 +11,21 @@ Content-Type: {{apj}}
     "password":"aaaaaa"
 }
 
-###
+### 注册
 POST {{host}}/account
 Content-Type: {{apj}}
 
 {
     "nickname":"",
     "email":"wuyaziyuwei@163.com",
+    "password":"aaaaaa"
+}
+
+### 登录
+GET {{host}}/account/6aGdWBHF7pMX
+Content-Type: {{apj}}
+
+{
+    "email":"wuy@163.com",
     "password":"aaaaaa"
 }

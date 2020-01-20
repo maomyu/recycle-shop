@@ -16,6 +16,6 @@ func main() {
 	go client.ConsumeFromQueue("creditscore:", "updatecreditscore", mqdao.UpdateCreditscore)
 	r := gin.Default()
 	r.POST("/user/account", controller.Register)
-	r.GET("/user/account/{id}", controller.Login)
+	r.GET("/user/account/:id", controller.Login)
 	http.ListenAndServe("0.0.0.0:8081", r)
 }

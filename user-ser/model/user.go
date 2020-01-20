@@ -17,17 +17,34 @@ type User struct {
 	Role        int       `json:"role"`
 }
 type RegisterResult struct {
-	ID          string    `json:"id"`
-	Nickname    string    `json:"nickname"`
-	Sex         int       `json:"sex"`
-	Email       string    `json:"email"`
-	HeaderImage string    `json:"headerimage"`
-	School      string    `json:"school"`
-	Signature   string    `json:"signature"`
-	Birthday    time.Time `json:"birthday"`
-	StudentID   string    `json:"studentid"`
-	Isrealname  int       `json:"isrealname"` //是否实名
-	Follow      int       `json:"follow"`
-	Fans        int       `json:"fans"`
-	Creditscore int       `json:"creditscore"` //信用值
+	ID          string `json:"id"`
+	Nickname    string `json:"nickname"`
+	Sex         int    `json:"sex"`
+	Email       string `json:"email"`
+	HeaderImage string `json:"headerimage"`
+	School      string `json:"school"`
+	Signature   string `json:"signature"`
+	Birthday    string `json:"birthday"`
+	StudentID   string `json:"studentid"`
+	Isrealname  int    `json:"isrealname"` //是否实名
+	Follow      int    `json:"follow"`
+	Fans        int    `json:"fans"`
+	Creditscore int    `json:"creditscore"` //信用值
+}
+
+// 登录的返回结果
+type LoginResult struct {
+	ID          string `json:"id"`
+	Nickname    string `json:"nickname"`
+	Sex         int    `json:"sex"`
+	Email       string `json:"email"`
+	HeaderImage string `json:"headerimage"`
+	School      string `json:"school"`
+	Signature   string `json:"signature"`
+	Birthday    string `json:"birthday"`
+	StudentID   string `json:"studentid"`
+	Isrealname  int    `json:"isrealname"` //是否实名
+	Follow      int    `json:"follow"`
+	Fans        int    `json:"fans"`
+	Creditscore int    `json:"creditscore"` //信用值
 }
