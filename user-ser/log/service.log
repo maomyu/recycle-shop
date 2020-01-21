@@ -56,3 +56,42 @@
 2020-01-20 16:42:39.123	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
 2020-01-20 16:43:47.334	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
 2020-01-20 16:49:32.564	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 17:10:24.046	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 19:32:45.215	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 19:59:53.442	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 20:02:17.822	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 20:04:36.844	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 20:06:46.521	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-20 20:12:09.744	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-21 11:40:53.623	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-21 11:43:54.206	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-21 11:44:05.553	ERROR	dao/register.go:62	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1062 Duplicate entry 'liba@163.com' for key 'email'})]
+2020-01-21 11:44:08.709	ERROR	dao/register.go:62	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1062 Duplicate entry 'liba@163.com' for key 'email'})]
+2020-01-21 11:47:08.383	ERROR	dao/register.go:62	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1062 Duplicate entry 'liba@163.com' for key 'email'})]
+2020-01-21 11:47:22.227	ERROR	dao/register.go:62	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1205 Lock wait timeout exceeded; try restarting transaction})]
+2020-01-21 11:47:26.237	ERROR	dao/register.go:62	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1205 Lock wait timeout exceeded; try restarting transaction})]
+2020-01-21 11:47:30.240	ERROR	dao/register.go:62	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1205 Lock wait timeout exceeded; try restarting transaction})]
+2020-01-21 11:47:35.228	ERROR	dao/register.go:62	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1205 Lock wait timeout exceeded; try restarting transaction})]
+2020-01-21 11:47:49.229	ERROR	dao/register.go:62	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1205 Lock wait timeout exceeded; try restarting transaction})]
+2020-01-21 11:47:54.239	ERROR	dao/register.go:62	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1205 Lock wait timeout exceeded; try restarting transaction})]
+2020-01-21 11:47:56.240	ERROR	dao/register.go:62	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1205 Lock wait timeout exceeded; try restarting transaction})]
+2020-01-21 11:47:57.239	ERROR	dao/register.go:62	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1205 Lock wait timeout exceeded; try restarting transaction})]
+2020-01-21 11:47:58.239	ERROR	dao/register.go:62	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1205 Lock wait timeout exceeded; try restarting transaction})]
+2020-01-21 11:48:01.239	ERROR	dao/register.go:62	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1205 Lock wait timeout exceeded; try restarting transaction})]
+2020-01-21 11:48:03.240	ERROR	dao/register.go:62	[user-ser:dao:insertuser]:[%!w(*mysql.MySQLError=&{1205 Lock wait timeout exceeded; try restarting transaction})]
+2020-01-21 11:48:44.050	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-21 12:22:47.141	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-21 12:23:21.862	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-21 15:01:33.566	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-21 15:19:19.913	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-21 15:24:22.540	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-21 15:26:17.541	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-21 15:29:23.365	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-21 15:29:25.251	ERROR	dao/service.go:16	Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'set passwd = ?,truename = ? ,sex = ?, email = ?,headerimage = ?,school = ?,signa' at line 1
+2020-01-21 15:31:50.310	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-21 15:32:07.048	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-21 15:32:13.750	ERROR	dao/service.go:16	Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'set passwd = ?,truename = ? ,sex = ?, email = ?,headerimage = ?,school = ?,signa' at line 1
+2020-01-21 15:33:15.628	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-21 15:33:23.472	ERROR	dao/service.go:16	Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'set passwd = ?,truename = ? ,sex = ?, email = ?,headerimage = ?,school = ?,signa' at line 1
+2020-01-21 15:35:44.291	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}
+2020-01-21 15:50:18.227	INFO	redispool/redis.go:29	{true 112.124.31.82:6379 redis6379recycle072829 8 3000 {false   []}}

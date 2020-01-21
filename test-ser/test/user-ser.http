@@ -16,16 +16,26 @@ POST {{host}}/account
 Content-Type: {{apj}}
 
 {
-    "nickname":"",
-    "email":"wuyaziyuwei@163.com",
+    "nickname":"liba2",
+    "email":"liba2@163.com",
     "password":"aaaaaa"
 }
 
 ### 登录
-GET {{host}}/account/6aGdWBHF7pMX
+GET {{host}}/account/SI7jHobAuSoA9Abu1fRE
 Content-Type: {{apj}}
 
 {
-    "email":"wuy@163.com",
+    "email":"liba2@163.com",
     "password":"aaaaaa"
+}
+
+### 提交标签
+POST {{host}}/account/tags/SI7jHobAuSoA9Abu1fRE HTTP/1.1
+Content-Type: {{apj}}
+
+{
+    "email":"liba2@163.com",
+    "school":"南阳理工学院",
+    "interesttags":["1","2","3","4","5","6"]
 }

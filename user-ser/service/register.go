@@ -14,6 +14,14 @@ func (u Service) GetUserInfo(email string) (model.User, error) {
 	user := userdao.QueryUserByEmail(email)
 	return user, nil
 }
+func (u Service) UpdateUserInfo(user model.User) bool {
+	dao := dao.UserDao{}
+	// 获得用户的基本信息
+	school := user.School
+	user = dao.QueryUserByEmail(user.Email)
+	user.School = school
+	return dao.UpdateUserInfo(user)
+}
 
 // 注册
 func (u RegisterService) Register(user model.User) (model.RegisterResult, bool) {

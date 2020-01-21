@@ -17,5 +17,7 @@ func main() {
 	r := gin.Default()
 	r.POST("/user/account", controller.Register)
 	r.GET("/user/account/:id", controller.Login)
+	// 更新用户的标签
+	r.POST("/user/account/tags/:id", controller.UpdateTags)
 	http.ListenAndServe("0.0.0.0:8081", r)
 }

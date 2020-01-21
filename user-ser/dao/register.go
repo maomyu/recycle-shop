@@ -27,6 +27,7 @@ func (u UserDao) QueryUserByEmail(email string) (user model.User) {
 
 	sql := "SELECT * FROM USER WHERE email = ?"
 
+	session.Begin()
 	row := session.DB.QueryRow(sql, email)
 
 	row.Scan(&user.ID, &user.Nickname, &user.Password,
@@ -35,7 +36,7 @@ func (u UserDao) QueryUserByEmail(email string) (user model.User) {
 		&user.HeaderImage, &user.School, &user.Signature,
 		&user.Birthday, &user.StudentID, &user.Role,
 	)
-
+	session.Commit()
 	return user
 }
 
